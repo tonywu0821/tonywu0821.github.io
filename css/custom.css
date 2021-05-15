@@ -1,3 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+. {
+  text-decoration: none;
+}
 body,h1,h2,h3,h4,h5,h6 {
   font-family: "Lato", sans-serif;
 }
@@ -31,4 +40,105 @@ body, html {
     background-attachment: scroll;
     min-height: 400px;
   }
+}
+
+/* My Projects */
+.my-projects{
+  background-color: rgb(255, 255, 255);
+}
+
+.projects-body {
+  display: grid;
+  grid-gap: 50px;
+  padding: 5% 5% 5% 5%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: rgb(95, 95, 95);
+}
+
+.projects-item {
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  border-radius: 1rem;
+  /* For image fade animation */
+  position: relative;
+}
+
+.projects-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 2% 2% 2% 2%;
+}
+
+.projects-item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.projects-item > p {
+    text-align: center;
+}
+
+.projects-body > a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .my-projects {
+      margin-top: 5%;
+      margin-left: 12%;
+      margin-right: 12%;
+  }
+}
+
+/* Projects item fade animation */
+.projects-fade::after {
+  /* Project Description Styling */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5% 5% 5%;
+  /* Fading */
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.projects-fade:hover::after {
+  opacity: 0.85;
+}
+
+/* Project Description Content */
+.project-1::after {
+  content: "A React app that mimics a fake ecommerce site. It uses Fake-store API as Backend and React.js as Frontend. (This app is created by npx create-react-app command).  Click to see live Demo.";
+}
+
+.project-2::after {
+  content: "This is a single-page application that can help people manage tasks. It is created with the MongoDB, Express.js, React.js, Node.js (MERN) stack. Click to see live Demo.";
+}
+
+.project-3::after {
+  content: "The To-Do List is a web application that provide a private To-Do List for different users to manage their tasks. In this application, I utilized Postgres and bcrypt for authentication and JWT token for authorization. Click to see live Demo.";
+}
+
+.project-4::after {
+  content: "A File System Manager that monitors a given directory in the file system on a local machine, for changes to files, etc., and a Peer that can 'relay' these changes to another BitBox Peer on a remote machine. Click to see source code.";
+}
+
+.project-5::after {
+  content: "Build an information retrieval system (search engine) to retrieve possible evidence using PyLucene and trained a deep learning model to verify claims using Wikipedia corpus (Ranked top 20%). Click to see source code.";
+}
+
+.project-6::after {
+  content: "Benchmarking Distributed Stream Processing Systems including Apache Storm and Dragon. Deployed two systems to clusters on Nectar Cloud and designed experiments to evaluate their performance an behavior. (My Research project got H1) ";
 }
