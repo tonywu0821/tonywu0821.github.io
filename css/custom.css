@@ -49,12 +49,8 @@ a:hover {
   height: 112px;
   border-bottom: 1px solid var(--line);
 }
-.wordmark {
-  font: 800 35px/1 var(--display);
-  letter-spacing: -3px;
-}
-.wordmark span {
-  color: #83a95a;
+.site-name {
+  font: 600 18px/1.4 var(--display);
 }
 .site-header nav {
   display: flex;
@@ -482,10 +478,6 @@ footer {
   font-size: 11px;
   color: var(--muted);
 }
-footer .wordmark {
-  font-size: 28px;
-  color: var(--ink);
-}
 footer a:last-child span {
   margin-left: 10px;
 }
@@ -684,8 +676,6 @@ footer a:last-child span {
     padding-block: 30px;
   }
   footer p {
-    order: 3;
-    width: 100%;
     margin: 0;
   }
   footer a:last-child {
