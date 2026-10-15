@@ -1,154 +1,275 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Tong-Ing Wu's Website</title>
-
-<meta charset="utf-8">
-<!--For resonsive website -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- CSS -->
-<link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="./css/custom.css">
-<!--  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
--->
-<!-- End-CSS -->
-
-<!-- CSS Note
-Inline - by using the style attribute inside HTML elements
-<h1 style="color:blue;">A Blue Heading</h1>
-
-Internal - by using a <style> element in the <head> section
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-
-External - by using a <link> element to link to an external CSS file
-  <link rel="stylesheet" href="styles.css">
--->
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
-<!-- Bootstrap Core JavaScript-->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous" defer></script>
-<!-- Custom JavaScript-->
-<script src="./js/custom.js" defer></script>
-
-</head>
-<body>
-<!-- Navbar (sit on top) -->
-  <div class="w3-top w3-white">
-    <div class="w3-bar" id="myNavbar">
-      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
-      <a href="#home" class="w3-bar-item w3-button w3-white test w3-hover-black">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-black" ><i class="fa fa-user"></i> ABOUT</a>
-      <a href="#project" class="w3-bar-item w3-button w3-hide-small w3-hover-black"><i class="fa fa-tasks"></i> PROJECTS</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-black"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">
-      </a>
-    </div>
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-      <a href="#about" class="w3-bar-item w3-button w3-hover-black" onclick="toggleFunction()">ABOUT</a>
-      <a href="#project" class="w3-bar-item w3-button w3-hover-black" onclick="toggleFunction()">PROJECTS</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hover-black" onclick="toggleFunction()">CONTACT</a>
-    </div>
-  </div>
-
-  <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> Tong-Ing Wu </span>
-    </div>
-  </div>
-
-  <div class="w3-padding-large" id="main">
-    <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64 " id="about">
-      <h2>About Me</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <p>I am Tony, a software developer who just graduated from the University of Melbourne with a Master of Information Technology Degree. I am passionate about learning new skills and knowledge in computer science. I sharpened my skills by doing the internship, self-learning and side projects. I have experience in debugging and writing auto-tests. Also, I can do mobile/web development (Android and MERN Stack). Actively seeking full-time opportunities as a software developer.
-      <br>
-      <br>
-      My resume that details my projects and experience in software development is attached below.  
-      </p>
-      <a href = "./CV/Resume_Tong-Ing.pdf"><button class="w3-button w3-center w3-light-grey w3-padding-large w3-section">
-        <i class="fa fa-download"></i> Download Resume
-      </button></a>
-      
-    </div>
-
-    <div class="my-projects-slider w3-content w3-justify w3-text-grey w3-padding-64" id="project">
-      <h2>My Projects</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <div class="projects-body">
-          <!-- project 1 -->
-          <a href="https://react-app-shopping-cart.herokuapp.com/" class="projects-item projects-fade project-1" target="_blank">
-            <img class="projects-img" src="./images/t1.png" alt="Fake E-Commerce Website">
-            <p>Fake E-Commerce Website</p>
-          </a>
-
-          <!-- project 2 -->
-          <a href="https://guarded-mesa-78058.herokuapp.com/" class="projects-item projects-fade project-2" target="_blank" >
-            <img class="projects-img" src="./images/t2.png" alt="Task Manager - MERN stack">
-            <p>Task Manager - MERN stack</p>
-          </a>
-
-          <!-- project 3 -->
-          <a href="https://pern-deploy-0505.herokuapp.com/" class="projects-item projects-fade project-3" target="_blank">
-            <img class="projects-img" src="./images/t3.png" alt="YouToDo - PERN Stack">
-            <p>YouToDo - PERN Stack</p>
-          </a>
-
-          <!-- project 4 -->
-          <a href="https://github.com/tonywu0821/P2P-File-Sharing-System" class="projects-item projects-fade project-4" target="_blank">
-            <img class="projects-img" src="./images/t4.png" alt="P2P File Sharing System">
-            <p>P2P File Sharing System</p>
-          </a>
-          <!-- project 5 -->
-          <a href="https://github.com/tonywu0821/Automatic-Fact-Verification" class="projects-item projects-fade project-5" target="_blank">
-            <img class="projects-img" src="./images/t5.png" alt="Automatic Fact Verification System">
-            <p>Automatic Fact Verification System</p>
-          </a>
-          <!-- project 6 -->
-          <a href="javascript:void(0)" class="projects-item projects-fade project-6" target="_blank">
-            <img class="projects-img" src="./images/t6.png" alt="Bechmarking Distributed Stream Processing Systems">
-            <p>Bechmarking Distributed Stream Processing Systems</p>
-          </a>
-      </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="contact">
-      <h2>Contact Me</h2>
-      <hr style="width:200px">
-      <div class="w3-section">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Melbourne, VIC, AU<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +61 0450056539<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: tongingw@student.unimelb.edu.au<br>
-      </div><br>
-    <!-- End Contact Section -->
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-      <div class="w3-xlarge w3-section">
-        <a href="https://github.com/tonywu0821/"><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/tongingwu/"><i class="fa fa-linkedin w3-hover-opacity"></i></a></i>
-      </div>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> and <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank" class="w3-hover-text-green">Bootstrap 4</a></p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tony Wu — software developer building fintech web applications, GraphQL services, desktop apps, and developer tools with TypeScript."
+    />
+    <meta name="theme-color" content="#f7f8f2" />
+    <meta property="og:title" content="Tony Wu — Software Developer" />
+    <meta
+      property="og:description"
+      content="Thoughtful interfaces. Useful tools. TypeScript all the way through."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tonywu0821.github.io/" />
+    <title>Tony Wu — Software Developer</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23283f32'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='sans-serif' font-size='32' fill='%23d6ef9e'%3Etw%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#home" aria-label="Tony Wu home"
+        >tw<span>・</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#work">Work</a
+        ><a href="#stack">Stack</a>
+      </nav>
+      <a class="header-link" href="https://github.com/tonywu0821"
+        >GitHub <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main id="main">
+      <section class="hero wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> TONY WU / SOFTWARE DEVELOPER
+          </p>
+          <h1 id="hero-title">
+            Thoughtful interfaces.<br />Useful tools.<br /><span
+              >Built with care.</span
+            >
+          </h1>
+          <p class="hero-description">
+            Hey, I'm Tony. I build web applications, GraphQL services, and
+            developer tools — with TypeScript connecting the dots.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work"
+              >Explore my work <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="./CV/Tony_Wu_CV.pdf"
+              >Download CV (PDF) <span aria-hidden="true">↓</span></a
+            >
+          </div>
+        </div>
+        <div
+          class="workbench"
+          aria-label="An illustration of my development stack: React interfaces connect to GraphQL services and Node.js on AWS"
+        >
+          <div class="workbench-top">
+            <span><i></i><i></i><i></i></span><span>the building blocks</span
+            ><span>↗</span>
+          </div>
+          <div class="canvas-grid">
+            <div class="canvas-label">IDEA → INTERFACE → SYSTEM</div>
+            <div class="system-node interface">
+              <span class="node-icon" aria-hidden="true">▤</span>
+              <div>
+                <small>01 / THE EXPERIENCE</small
+                ><strong>React + TypeScript</strong>
+              </div>
+              <span class="node-dot"></span>
+            </div>
+            <div class="connector"><span>typed operations</span></div>
+            <div class="system-node api">
+              <span class="node-icon" aria-hidden="true">◇</span>
+              <div>
+                <small>02 / THE CONNECTION</small><strong>GraphQL BFF</strong>
+              </div>
+              <span class="node-dot"></span>
+            </div>
+            <div class="connector"><span>resolvers & services</span></div>
+            <div class="system-node cloud">
+              <span class="node-icon" aria-hidden="true">⌘</span>
+              <div>
+                <small>03 / THE FOUNDATION</small><strong>Node.js + AWS</strong>
+              </div>
+              <span class="node-dot"></span>
+            </div>
+            <div class="canvas-footer">
+              <span>Less friction. More flow.</span
+              ><span aria-hidden="true">{ ts }</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-footnote">
+          <span>WEB · DESKTOP · DEVELOPER EXPERIENCE</span
+          ><a href="#about"
+            >A little more about me <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="about section wrap"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="section-label">
+          <span>01 / ABOUT</span>
+          <h2 id="about-title">From the interface<br />to what powers it.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I enjoy taking an idea all the way through: the interface, the
+            underlying systems, and the details that make it useful.
+          </p>
+          <p>
+            At work, I develop fintech products across React frontends and
+            GraphQL backend-for-frontend services. I care about reusable UI,
+            typed APIs, and reliable testing and delivery.
+          </p>
+          <p>
+            Outside work, that curiosity takes me into desktop software, local
+            AI, and tools that make everyday development a little easier.
+          </p>
+          <a class="text-link" href="https://www.linkedin.com/in/tongingwu/"
+            >More about my experience <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="section work wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / WORK & EXPLORATIONS</p>
+            <h2 id="work-title">Things I spend time building.</h2>
+          </div>
+          <p>Practical problems.<br /> A few different playgrounds.</p>
+        </div>
+        <article class="work-row">
+          <span class="work-number">01</span>
+          <div>
+            <p class="work-category">PROFESSIONAL FOCUS</p>
+            <h3>Fintech, front to back.</h3>
+            <p>
+              Web applications and GraphQL BFF services, with shared design
+              systems and testing built into the development workflow.
+            </p>
+            <div class="tags">
+              <span>React</span><span>TypeScript</span><span>GraphQL</span
+              ><span>AWS</span>
+            </div>
+          </div>
+          <span class="work-mark" aria-hidden="true">{ }</span>
+        </article>
+        <article class="work-row">
+          <span class="work-number">02</span>
+          <div>
+            <p class="work-category">DEVELOPER TOOLS</p>
+            <h3>Making the invisible visible.</h3>
+            <p>
+              Exploring APIs, understanding CI failures, and turning complex
+              developer workflows into useful interfaces.
+            </p>
+            <div class="tags">
+              <span>GraphQL tooling</span><span>CI diagnostics</span
+              ><span>GitHub Actions</span>
+            </div>
+            <a
+              class="project-link"
+              href="https://github.com/tonywu0821/ci-flake-lab"
+              >Explore CI Flake Lab <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <span class="work-mark" aria-hidden="true">&gt;_</span>
+        </article>
+        <article class="work-row">
+          <span class="work-number">03</span>
+          <div>
+            <p class="work-category">SIDE EXPLORATIONS</p>
+            <h3>Local software. New possibilities.</h3>
+            <p>
+              Desktop apps for transcription, translation, and voice
+              interaction, alongside market data dashboards and backtesting
+              tools.
+            </p>
+            <div class="tags">
+              <span>Electron</span><span>Local AI</span><span>Python</span
+              ><span>SQLite</span>
+            </div>
+          </div>
+          <span class="work-mark" aria-hidden="true">✳</span>
+        </article>
+      </section>
+      <section
+        class="section stack wrap"
+        id="stack"
+        aria-labelledby="stack-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / THE TOOLBOX</p>
+            <h2 id="stack-title">Tools behind the work.</h2>
+          </div>
+          <p>TypeScript at the centre.<br /> The right tool for the rest.</p>
+        </div>
+        <dl class="stack-list">
+          <div>
+            <dt>Frontend <span>01</span></dt>
+            <dd>
+              TypeScript · React · Apollo Client · TanStack Query ·
+              styled-components · Tailwind CSS
+            </dd>
+          </div>
+          <div>
+            <dt>Backend / BFF <span>02</span></dt>
+            <dd>
+              Node.js · GraphQL · AWS AppSync · Lambda · DynamoDB · Serverless
+              Framework
+            </dd>
+          </div>
+          <div>
+            <dt>UI & tooling <span>03</span></dt>
+            <dd>Storybook · GraphQL Code Generator · Nx · Vite</dd>
+          </div>
+          <div>
+            <dt>Testing & delivery <span>04</span></dt>
+            <dd>
+              Jest · React Testing Library · Cypress · Playwright · GitHub
+              Actions
+            </dd>
+          </div>
+          <div>
+            <dt>Beyond the browser <span>05</span></dt>
+            <dd>Electron · Python · SQLite · Local AI</dd>
+          </div>
+        </dl>
+      </section>
+      <section
+        class="contact wrap"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <p class="eyebrow">ALWAYS CURIOUS ABOUT WHAT'S NEXT</p>
+        <h2 id="contact-title">
+          Good things start<br />with a conversation<span>↗</span>
+        </h2>
+        <div class="contact-bottom">
+          <p>Have an idea, a question, or just want to say hello?</p>
+          <div>
+            <a
+              class="button light"
+              href="https://www.linkedin.com/in/tongingwu/"
+              >Connect on LinkedIn <span aria-hidden="true">↗</span></a
+            ><a class="contact-github" href="https://github.com/tonywu0821"
+              >Find me on GitHub <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap">
+      <a class="wordmark" href="#home" aria-label="Back to top"
+        >tw<span>・</span></a
+      >
+      <p>© 2026 Tony Wu. Made with intention.</p>
+      <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
-    
-  </div>
-</body>
-
+  </body>
 </html>
-
